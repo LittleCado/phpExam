@@ -15,8 +15,8 @@ function get_sessions_data($conn)
                     <td>' . $row['status'] . '</td>
                     <td>
                         <button type="button" class="btn btn-primary">Edit</button>
-                        <button type="button" class="btn btn-warning">Archive</button>
-                        <a href="deleteSession.php?session_id='.$row['id'].' type="button" class="btn btn-danger">Delete</a>
+                        <a href="archiveSession.php?session_id='.$row['id'].'" type="button" class="btn btn-warning">Archive</a>
+                        <a href="deleteSession.php?session_id='.$row['id'].'" type="button" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                 </tbody>
@@ -40,7 +40,7 @@ function get_sessions_data($conn)
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Enter password</title>
+    <title>Sessions</title>
 </head>
 <body class="min-vh-100 d-flex mt-4 ml-4 mr-4 flex-column">
 
