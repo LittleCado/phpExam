@@ -14,9 +14,9 @@ function get_sessions_data($conn)
                     <td><a href="#">' . $row['link'] . '</a></td>
                     <td>' . $row['status'] . '</td>
                     <td>
-                        <button type="button" class="btn btn-primary">Edit</button>
-                        <a href="archiveSession.php?session_id='.$row['id'].'" type="button" class="btn btn-warning">Archive</a>
-                        <a href="deleteSession.php?session_id='.$row['id'].'" type="button" class="btn btn-danger">Delete</a>
+                        <a href="editSession.php?session_id=' . $row['id'] . '" type="button" class="btn btn-primary">Edit</a>
+                        <a href="archiveSession.php?session_id=' . $row['id'] . '" type="button" class="btn btn-warning">Archive</a>
+                        <a href="deleteSession.php?session_id=' . $row['id'] . '" type="button" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                 </tbody>
@@ -44,7 +44,7 @@ function get_sessions_data($conn)
 </head>
 <body class="min-vh-100 d-flex mt-4 ml-4 mr-4 flex-column">
 
-<button type="button" class="btn btn-primary mb-4">Create new session</button>
+<a href="createSession.php" type="button" class="btn btn-primary mb-4">Create new session</a>
 
 <table class="table">
     <thead>
@@ -57,6 +57,7 @@ function get_sessions_data($conn)
     </thead>
     <?php get_sessions_data($conn); ?>
 </table>
+
 
 
 <!-- Optional JavaScript -->
