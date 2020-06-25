@@ -7,7 +7,7 @@ if(isset($_POST['first_question'])) {
     $query = mysqli_query($conn, "SELECT id FROM `sessions` ORDER BY id DESC LIMIT 1;");
     while ($row = mysqli_fetch_assoc($query)) {
         $session_id = $row['id'] + 1;
-        $link = 'link' . $session_id;
+        $link = 'user.php?session_id=' . $session_id;
         $insert_query = mysqli_query($conn, "INSERT INTO `sessions` (link, status) VALUES ('$link','Working')");
     }
 

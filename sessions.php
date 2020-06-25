@@ -11,7 +11,7 @@ function get_sessions_data($conn)
                <tbody>
                 <tr>
                     <th scope="row">' . $row['id'] . '</th>
-                    <td><a href="#">' . $row['link'] . '</a></td>
+                    <td><a href="' . $row['link'] . '">' . $row['link'] . '</a></td>
                     <td>' . $row['status'] . '</td>
                     <td>
                         <a href="editSession.php?session_id=' . $row['id'] . '" type="button" class="btn btn-primary">Edit</a>

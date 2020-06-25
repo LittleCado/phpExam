@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$db_name = "forex";
+$servername = "std-mysql";
+$username = "std_947";
+$password = "Mypassword";
+$db_name = "std_947";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $db_name);
