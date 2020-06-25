@@ -16,7 +16,7 @@ function get_sessions_data($conn)
                     <td>
                         <button type="button" class="btn btn-primary">Edit</button>
                         <button type="button" class="btn btn-warning">Archive</button>
-                        <button type="button" class="btn btn-danger">Delete</button>
+                        <a href="deleteSession.php?session_id='.$row['id'].' type="button" class="btn btn-danger">Delete</a>
                     </td>
                 </tr>
                 </tbody>
